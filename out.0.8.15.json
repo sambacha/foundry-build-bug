@@ -1,0 +1,19 @@
+{
+  "errors": [
+    {
+      "sourceLocation": {
+        "file": "script/Contract.s.sol",
+        "start": 65,
+        "end": 95
+      },
+      "type": "ParserError",
+      "component": "general",
+      "severity": "error",
+      "errorCode": "6275",
+      "message": "Source \"forge-std/Script.sol\" not found: File not found. Searched the following locations: \"\".",
+      "formattedMessage": "ParserError: Source \"forge-std/Script.sol\" not found: File not found. Searched the following locations: \"\".\n --> script/Contract.s.sol:4:1:\n  |\n4 | import \"forge-std/Script.sol\";\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n"
+    }
+  ],
+  "sources": {},
+  "contracts": {}
+}

@@ -1,0 +1,39 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "script/Contract.s.sol": {
+      "content": "// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.8.13;\n\nimport \"forge-std/Script.sol\";\n\nimport {Contract} from \"src/Contract.sol\";\n\ncontract ContractScript is Script {\n    function setUp() public {}\n\n    function run() public {\n        vm.broadcast();\n        new Contract();\n    }\n}\n"
+    },
+    "src/Contract.sol": {
+      "content": "// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.8.15;\n\ncontract Contract {}\n"
+    }
+  },
+  "settings": {
+    "remappings": [
+      "src/=src/",
+      "script/=script/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+      "*": {
+        "": [
+          "ast"
+        ],
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers"
+        ]
+      }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+  }
+}
